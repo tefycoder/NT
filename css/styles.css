@@ -7,7 +7,9 @@ HTML5 display definitions
 /*
 * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
 */
-
+/*{
+    outline: 1px solid rgba(0,255,0,0.5);
+}*/
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
     display: block
 }
@@ -482,7 +484,8 @@ Buttons
     text-decoration: none;
 }
 .learn-btn, .download-btn {
-    display: inline-block;
+    /*display: inline-block;*/
+    margin: 0 auto;
     padding: 18px 46px;
     border: 2px solid #fff;
     border-radius: 3px;
@@ -577,12 +580,14 @@ Navigation
 /* ==========================================================================
 Hero
 ========================================================================== */
+.tapita{
+    background: rgba(245, 55, 0,0.7);
+}
 .hero {
     position: relative;
     padding: 60px 0 60px 0;
     min-height: 800px;
-    background: rgb(40, 70, 102) url('../img/hero-01.jpg') no-repeat center center;
-    background-size: cover;
+    background: url('../img/nt-image.jpg') no-repeat center center;
     color: #fff;
 }
 .hero h1 {
@@ -671,7 +676,7 @@ Features Slider
     position: relative;
     padding: 11% 100px 10% 100px;
     height: 400px;
-    background-color: #3F6184;
+    background-color: rgba(245, 55, 0, 0.7);
 }
 .features-slider ul {
     margin: 0;
@@ -733,7 +738,7 @@ Features List
     margin-right: 25px;
     width: 90px;
     height: 90px;
-    border: solid 2px #4e9ba3;
+    border: solid 2px rgb(245, 55, 0);
     border-radius: 50%;
     vertical-align: top;
     text-align: center;
@@ -741,7 +746,7 @@ Features List
     line-height: 90px;
 }
 .feature-icon i {
-    color: #4e9ba3
+    color: rgb(245, 55, 0);
 }
 
 /* ==========================================================================
