@@ -3,13 +3,13 @@
 /* ==========================================================================
 HTML5 display definitions
 ========================================================================== */
-
+*{
+    outline: 1px solid rgba(0,255,0,0.3);
+}
 /*
 * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
 */
-/*{
-    outline: 1px solid rgba(0,255,0,0.5);
-}*/
+
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
     display: block
 }
@@ -474,8 +474,8 @@ Buttons
     margin: 0 10px 10px 0;
     padding: 20px 50px;
     border-radius: 3px;
-    background-color: #fff;
-    color: #4b98a9;
+    background-color: #4b98a9;
+    color: #fff;
     font-size: 16px;
 }
 .use-btn:hover, .use-btn:focus {
@@ -484,18 +484,18 @@ Buttons
     text-decoration: none;
 }
 .learn-btn, .download-btn {
-    /*display: inline-block;*/
-    margin: 0 auto;
+    display: inline-block;
     padding: 18px 46px;
-    border: 2px solid #fff;
+    border: 3px solid #fff;
     border-radius: 3px;
     color: #fff;
     font-size: 16px;
+    background: rgba(255,45,0,0.5);
 }
 .learn-btn:hover, .download-btn:hover, .learn-btn:focus, .download-btn:focus {
-    border-color: #73d0da;
-    color: #73d0da;
+    color: #fff;
     text-decoration: none;
+    background: rgba(78, 155, 163,0.6);
 }
 .read-more-btn {
     display: inline-block;
@@ -580,20 +580,21 @@ Navigation
 /* ==========================================================================
 Hero
 ========================================================================== */
-.tapita{
-    background: rgba(245, 55, 0,0.7);
-}
 .hero {
     position: relative;
     padding: 60px 0 60px 0;
     min-height: 800px;
-    background: url('../img/nt-image.jpg') no-repeat center center;
+    background: /*rgba(245, 55,0,0.7)*/ url('../img/hero-01.jpg') no-repeat center center;
+    background-size: cover;
     color: #fff;
+    text-align: center;
 }
 .hero h1 {
-    margin: 200px 0 45px 0;
-    font-weight: 300;
-    font-size: 45px;
+    margin: 100px 0 20px 0;
+    font-weight: bold;
+    font-size: 80px;
+    
+    /*font-family: "Roboto";*/
 }
 .hero h1 span {
     display: inline-block;
@@ -610,6 +611,15 @@ Hero
 header i {
     margin-left: 5px
 }
+.hero-content p:nth-child(2){
+    font-size: 30px;
+    margin: 30px 0 30px;
+    line-height: 35px;
+}
+.hero-content p:nth-child(3){
+    font-size: 20px;
+    margin-bottom:70px;
+}
 
 /* ==========================================================================
 Video
@@ -621,24 +631,37 @@ section.video i {
     font-size: 50px;
     -webkit-transition: color 300ms ease-in-out;
     transition: color 300ms ease-in-out;
+    border-radius: 100%;
+    padding: 10px;
+    border: 3px solid #323a45;
+}
+section.video i:hover{
+    border: 3px solid #73d0da;
 }
 section.video h1 {
     font-weight: 400;
     font-size: 20px;
 }
+.video h1 i{
+    margin: 20px;
+}
+.video h1 span{
+    font-size:25px;
+    font-weight: bold;
+}
 section.video {
-    padding: 60px 0;
+    padding: 30px 0;
     background-color: #f6f7f9;
 }
 section.video a {
-    color: #323a45
+    color: #323a45;
 }
 section.video a:hover, section.video a:focus {
     color: #73d0da;
     text-decoration: none;
 }
 section.video a:hover i, section.video a:focus i {
-    color: #73d0da
+    color: #73d0da;
 }
 
 /* ==========================================================================
@@ -676,7 +699,7 @@ Features Slider
     position: relative;
     padding: 11% 100px 10% 100px;
     height: 400px;
-    background-color: rgba(245, 55, 0, 0.7);
+    background-color: rgba(245,55,0,0.7);/*#3F6184*/
 }
 .features-slider ul {
     margin: 0;
@@ -687,7 +710,7 @@ Features Slider
     width: 100%;
 }
 .features-slider li h1 {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     color: #fff;
     font-weight: 400;
     font-size: 22px;
@@ -738,7 +761,7 @@ Features List
     margin-right: 25px;
     width: 90px;
     height: 90px;
-    border: solid 2px rgb(245, 55, 0);
+    border: solid 2px #4e9ba3;
     border-radius: 50%;
     vertical-align: top;
     text-align: center;
@@ -746,7 +769,7 @@ Features List
     line-height: 90px;
 }
 .feature-icon i {
-    color: rgb(245, 55, 0);
+    color: rgba(245,55,0,0.7);/*#4e9ba3;*/
 }
 
 /* ==========================================================================
@@ -781,7 +804,7 @@ blockquote .logo-quote {
 Showcase
 ========================================================================== */
 .showcase {
-    background: url('../img/showcase-bg-fixed-01.jpg') no-repeat center center fixed;
+    background: rgba(255,55,0,0.7) /*url('../img/showcase-bg-fixed-01.jpg'*/ no-repeat center center fixed;
     background-size: cover;
 }
 .showcase h1 {
