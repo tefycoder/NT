@@ -1069,13 +1069,14 @@ footer li:last-child {
     margin-right: 0
 }
 
-.social-buttons{
+/*.social-buttons{
     margin-left: 100px;
-}
+}*/
 .social-buttons li a:hover{
     color: rgba(255,45,0,0.7); 
     background: #fff;
 }
+
 /* ==========================================================================
 Nav Overlay
 ========================================================================== */
