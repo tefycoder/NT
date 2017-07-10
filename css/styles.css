@@ -1200,6 +1200,29 @@ Waypoints
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
+
+/*====================================================
+Nosotros
+============================================*/
+.team img {
+    width: 19vw;
+    height: 19vw;
+    margin: 2.5vw;
+    border-radius: 100%;
+}
+/*
+.socia {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background: rgb(36, 40, 48);
+
+==*/
 /* =========================================================================
 CONTACTO
 ========================================================================== */
@@ -1375,4 +1398,5 @@ CONTACTO
     width: 50%;
   }
 }
+
 
