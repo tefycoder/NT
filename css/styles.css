@@ -4,7 +4,7 @@
 HTML5 display definitions
 ========================================================================== */
 *{
-    /*outline: 1px solid rgba(0,255,0,0.3);*/
+    outline: 1px solid rgba(0,255,0,0.3);
 }
 /*
 * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
@@ -721,13 +721,14 @@ Features Slider
     background: url('../img/features-intro-01.jpg') no-repeat center center;
     background-size: cover;
 }
+/*-----------------------------PAGES-------------------------------*/
 .features-bg-page{
     position: relative;
     min-height: 400px;
     background: url('../img/gamesland.png') no-repeat center center;
     background-size: cover;
 }
-
+/*-----------------------------PAGES-------------------------------*/
 .features-img {
     width: 100%;
     height: 400px;
@@ -773,6 +774,7 @@ Features Slider
 .features-slider .flickity-page-dots .dot {
     margin: 0 12px 0 0;
 }
+/*---------------------PAGES------------------------*/
 .feat-page{
     background: url(../img/fondo.jpg);
     background-position: left right;
@@ -1039,6 +1041,8 @@ Footer
 ========================================================================== */
 footer {
     padding: 9px 0;
+    background-color: rgb(49, 112, 143);
+    color: #c7cacc;
 }
 footer p {
     color: #c7cacc;
@@ -1051,19 +1055,27 @@ footer li {
     float: left;
     margin-right: 15%;
     list-style: none;
-    text-transform: uppercase;
-    font-weight: 400;
+    /*text-transform: uppercase*/;
 }
 footer li a {
-    color: #3f6184
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    text-decoration: none;
 }
 footer li:last-child {
     margin-right: 0
 }
-/* ==========================================================================
-Paginas
-========================================================================== */
 
+.social-buttons{
+    margin-left: 100px;
+}
+.social-buttons li a:hover{
+    color: rgba(255,45,0,0.7); 
+    background: #fff;
+}
 /* ==========================================================================
 Nav Overlay
 ========================================================================== */
@@ -1188,17 +1200,18 @@ Waypoints
     animation-delay: 1s;
 }
 /* =========================================================================
-=contacto
+CONTACTO
 ========================================================================== */
-
-
-
+.contact{
+    background: url(../img/fondo.jpg);
+    background-position: bottom right;
+}
 .title{
   margin: 23px auto;
   width: 50%;
   text-align: center;
   padding-bottom: 10px;
-  font-family: Rajdhani;
+  font-weight: 300;
   font-size: 32px;
   color: #2E4B62;
 }
@@ -1210,7 +1223,7 @@ Waypoints
 .font {
   font-size: 16px;
   font-family: Helvetica, sans-serif;
-  color: white;
+  color: #fff;
 }
 .form {
   text-align: center; 
@@ -1240,34 +1253,42 @@ Waypoints
   transition: all 0.5s ease 0s;
 }
 .name {
-  background-color:rgba(245, 55,0,0.7);  
-  border-bottom: 5px #31708f;
+  background-color:/*rgba(245, 55,0,0.7)*/ #fff;  
+  color: #fff;
+  border: 1px solid rgba(245, 55,0,0.7);
+  border-bottom: 2px solid #31708f;    
+    
 }
 .name:hover{
-  background-color: #31708f;
-  border-bottom: 5px solid rgba(245, 55,0,0.7);
+  background-color: rgba(49, 112, 143,0.3);
+  border-bottom: 3px solid rgba(245, 55,0,0.7);
+    
 }
 .name:focus, .email:focus, .message:focus{
   outline: none;
   padding:15px;
+  color: #fff;
 }
 .email {
-  background-color: rgba(245, 55,0,0.7);  
-  border-bottom: 5px #31708f;
+  background-color: /*rgba(245, 55,0,0.7)*/ #fff;  
+    border: 1px solid rgba(245, 55,0,0.7);
+    border-bottom: 2px solid #31708f;
+    
 }
 .email:hover{
-  background-color: #31708f;
-  border-bottom: 5px solid rgba(245, 55,0,0.7);
+   background-color: rgba(49, 112, 143,0.3);
+  border-bottom: 3px solid rgba(245, 55,0,0.7);
 }
 .message {   
-  background-color: rgba(245, 55,0,0.7);
-  border-bottom: 5px solid #31708f;
+  background-color: /*rgba(245, 55,0,0.7)*/;
+   border: 1px solid rgba(245, 55,0,0.7);
+  border-bottom: 2px solid #31708f;
   overflow: hidden;
   height: 50px;
 }
 .message:hover{
-  background-color: #31708f;
-  border-bottom: 5px solid rgba(245, 55,0,0.7);
+   background-color: rgba(49, 112, 143,0.3);
+  border-bottom: 3px solid rgba(245, 55,0,0.7);
   height: 150px;
 }
 .submit{
