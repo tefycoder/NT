@@ -3,9 +3,7 @@
 /* ==========================================================================
 HTML5 display definitions
 ========================================================================== */
-*{
-    /*outline: 1px solid rgba(0,255,0,0.3);*/
-}
+
 /*
 * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
 */
@@ -62,7 +60,7 @@ html {
 */
 html, button, input, select, textarea {
     font-family: sans-serif;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Rajdhani';
 }
 html, body {
     overflow-x: hidden;
@@ -74,7 +72,7 @@ html, body {
 */
 body {
     margin: 0;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 /*
@@ -451,7 +449,7 @@ p {
     line-height: 25px;
 }
 a {
-    color: #73d0da
+    color: #31708f
 }
 a:hover, a:focus {
     color: #73d0da;
@@ -474,8 +472,8 @@ Buttons
     margin: 0 10px 10px 0;
     padding: 20px 50px;
     border-radius: 3px;
-    background-color: #4b98a9;
-    color: #fff;
+    background-color: #fff;
+    color: #4b98a9;
     font-size: 16px;
 }
 .use-btn:hover, .use-btn:focus {
@@ -486,16 +484,15 @@ Buttons
 .learn-btn, .download-btn {
     display: inline-block;
     padding: 18px 46px;
-    border: 3px solid #fff;
+    border: 2px solid #fff;
     border-radius: 3px;
     color: #fff;
     font-size: 16px;
-    background: rgba(255,45,0,0.5);
 }
 .learn-btn:hover, .download-btn:hover, .learn-btn:focus, .download-btn:focus {
-    color: #fff;
+    border-color: #73d0da;
+    color: #73d0da;
     text-decoration: none;
-    background: rgba(78, 155, 163,0.6);
 }
 .read-more-btn {
     display: inline-block;
@@ -582,26 +579,16 @@ Hero
 ========================================================================== */
 .hero {
     position: relative;
-    padding: 60px 0 60px 0;
-    min-height: 800px;
-    background: /*rgba(245, 55,0,0.7)*/ url('../img/hero-01.jpg') no-repeat center center;
+    padding: 38px 0 60px 0;
+    min-height: 134px;
+    background: rgb(40, 70, 102) url('../img/hero-01.jpg') no-repeat center center;
     background-size: cover;
     color: #fff;
-    text-align: center;
-}
-.hero-page{
-    background-color: #3f6184;
-    position: relative;
-    padding: 60px 0 60px 0;
-    color: #fff;
-    text-align: center;
 }
 .hero h1 {
-    margin: 100px 0 20px 0;
-    font-weight: bold;
-    font-size: 80px;
-    
-    /*font-family: "Roboto";*/
+    margin: 200px 0 45px 0;
+    font-weight: 300;
+    font-size: 45px;
 }
 .hero h1 span {
     display: inline-block;
@@ -618,15 +605,6 @@ Hero
 header i {
     margin-left: 5px
 }
-.hero-content p:nth-child(2){
-    font-size: 30px;
-    margin: 30px 0 30px;
-    line-height: 35px;
-}
-.hero-content p:nth-child(3){
-    font-size: 20px;
-    margin-bottom:70px;
-}
 
 /* ==========================================================================
 Video
@@ -638,64 +616,26 @@ section.video i {
     font-size: 50px;
     -webkit-transition: color 300ms ease-in-out;
     transition: color 300ms ease-in-out;
-    border-radius: 100%;
-    padding: 10px;
-    border: 3px solid #323a45;
-}
-section.video i:hover{
-    border: 3px solid #73d0da;
 }
 section.video h1 {
-    font-weight: bold;
+    font-weight: 400;
     font-size: 20px;
 }
-.video h1 i{
-    margin: 20px;
-}
-.video h1 span{
-    font-size:25px;
-    font-weight: bold;
-}
 section.video {
-    padding: 30px 0;
-    /*background-color: #f6f7f9;*/
-    background-image: url(../img/fondo.jpg);
-    background-position: right left;
-    /*background-attachment: fixed;*/
+    padding: 60px 0;
+    background-color: #f6f7f9;
 }
 section.video a {
-    color: #323a45;
+    color: #323a45
 }
 section.video a:hover, section.video a:focus {
     color: #73d0da;
     text-decoration: none;
 }
 section.video a:hover i, section.video a:focus i {
-    color: #73d0da;
+    color: #73d0da
 }
-/*---------------------IMAGES-----------------------*/
-.logo-color{
-    background-color: rgba(245,55,0,0.5);
-    width: 100px;
-    position: absolute;
-    left: 45%;
-    right: 55%;
-    top: 90px;
-}
-.logo-color img{
-    width: 80px;
-}
-.team-1{
-    position: absolute;
-    left: 35%;
-    right: 65%;
-}
-.team-2{
-    position: absolute;
-    left: 40%;
-    right: 60%;
-    top
-}
+
 /* ==========================================================================
 Custom Slider Controls (Flickity)
 ========================================================================== */
@@ -704,30 +644,33 @@ Custom Slider Controls (Flickity)
     height: 13px;
     opacity: 1;
     background: transparent;
-    border: 2px solid rgba(242,57,0,0.7);
+    border: 2px solid white;
     -webkit-transition: background 0.3s;
     transition: background 0.3s;
 }
 .flickity-page-dots .dot.is-selected {
-    background: rgba(242,57,0,0.7);
+    background: white;
 }
 
+/* ==========================================================================
+Cambios
+========================================================================== */
+.dark-bg {
+    background: #31708f;
+}
+section-padding {
+    padding: 66px 0 100px;
+}
 /* ==========================================================================
 Features Slider
 ========================================================================== */
 .features-bg {
     position: relative;
     min-height: 400px;
-    background: url('../img/features-intro-01.jpg') no-repeat center center;
-    background-size: cover;
-}
-.features-bg-page{
-    position: relative;
-    min-height: 400px;
+    min-inline-size: 451px;
     background: url('../img/gamesland.png') no-repeat center center;
     background-size: cover;
 }
-
 .features-img {
     width: 100%;
     height: 400px;
@@ -738,7 +681,7 @@ Features Slider
     position: relative;
     padding: 11% 100px 10% 100px;
     height: 400px;
-    background-color: rgba(245,55,0,0.7);/*#3F6184*/
+    background-color: rgba(245, 55,0,0.7);
 }
 .features-slider ul {
     margin: 0;
@@ -749,14 +692,14 @@ Features Slider
     width: 100%;
 }
 .features-slider li h1 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: #fff;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 22px;
 }
 .features-slider li p {
     color: #fff;
-    font-size: 15px;
+    font-size: 14px;
 }
 .features-intro-img {
     position: relative
@@ -773,22 +716,12 @@ Features Slider
 .features-slider .flickity-page-dots .dot {
     margin: 0 12px 0 0;
 }
-.feat-page{
-    background: url(../img/fondo.jpg);
-    background-position: left right;
-}
-.feat-page-intro{
-    background: url(../img/fondo.jpg);
-    background-position: right center;
-}
 
 /* ==========================================================================
 Features List
 ========================================================================== */
 .features-list {
-    padding: 130px 0;
-    background: url(../img/fondo.jpg);
-    background-attachment: fixed;
+    padding: 130px 0
 }
 .features-list h1 {
     margin: 0 0 10px 0;
@@ -818,8 +751,12 @@ Features List
     line-height: 90px;
 }
 .feature-icon i {
-    color: rgba(245,55,0,0.7);/*#4e9ba3;*/
+    color: #4e9ba3
 }
+
+/* ==========================================================================
+flotante
+========================================================================== */
 
 /* ==========================================================================
 Blockquote
@@ -853,27 +790,18 @@ blockquote .logo-quote {
 Showcase
 ========================================================================== */
 .showcase {
-    background: rgba(255,55,0,0.7) /*url('../img/showcase-bg-fixed-01.jpg'*/ no-repeat center center fixed;
+    background: url('../img/showcase-bg-fixed-01.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 .showcase h1 {
     margin: 0 0 20px 0;
     color: #fff;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 22px;
 }
 .showcase p {
     margin-bottom: 25px;
     color: #fff;
-    font-size: 15px;
-}
-.showcase ul{
-    padding-left: 40px;
-    color: #fff;
-}
-.showcase li a{
-    color: #fff;
-    font-size: 15px;
 }
 .device {
     position: absolute;
@@ -913,15 +841,14 @@ Showcase
 Screenshots Intro
 ========================================================================== */
 .screenshots-intro {
-    padding: 170px 0 30px 0;
-    background:url(../img/fondo.jpg);
-    background-attachment: fixed;
+    padding: 170px 0 100px 0;
+    background-color: #f6f7f9;
 }
 .screenshots-intro h1 {
     margin-bottom: 20px;
     color: #24374b;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 22px;
 }
 .screenshots-intro p {
     margin-bottom: 25px;
@@ -931,12 +858,6 @@ Screenshots Intro
 /* ==========================================================================
 Screenshots
 ========================================================================== */
-.screenshots{
-    background: rgba(256,45,0,0.7);
-}
-.img-project{
-    padding: 20px;
-}
 .screenshots ul {
     margin: 0;
     padding: 0;
@@ -1033,6 +954,20 @@ Download Now
     font-weight: 400;
     font-size: 40px;
 }
+.social-btn {
+    width: 40px;
+    height: 37px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: #e4765d;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+}
 
 /* ==========================================================================
 Footer
@@ -1060,9 +995,6 @@ footer li a {
 footer li:last-child {
     margin-right: 0
 }
-/* ==========================================================================
-Paginas
-========================================================================== */
 
 /* ==========================================================================
 Nav Overlay
@@ -1187,6 +1119,7 @@ Waypoints
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
+
 /* =========================================================================
 =contacto
 ========================================================================== */
@@ -1353,4 +1286,15 @@ Waypoints
     width: 50%;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
 
