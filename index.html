@@ -21,6 +21,9 @@
 		<link href="css/styles.css" rel="stylesheet">
 		<link href="css/queries.css" rel="stylesheet">
 		<!--<link rel="stylesheet" href="css/us.css">-->
+		<link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" href="css/slider.css">
 		
 		<!-- Facebook and Twitter integration -->
 		<meta property="og:title" content=""/>
@@ -34,354 +37,153 @@
 		<meta name="twitter:card" content="" />
 	</head>
 	<body>
-	    <!----------------------HEADER----------------------->
-		<header>
-			<section class="hero">
-				<div class="texture-overlay"></div>
-				<div class="container">
-					<div class="row nav-wrapper">
-						<div class="col-md-6 col-sm-6 col-xs-6 text-left">
-							<a href="index.html"><img src="img/nt-logo.png" alt="Boxify Logo" class="img-responsive" width="130px"></a>
-						</div>
+	    <!----------------------HEADER---------------------
+        <nav class="navbar navbar-inverse navbar-fixed-top" style="display:none">
+          <div class="container-fluid">
+         
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand titulo" href="#"><img src="img/nt-logo.png" alt="" class="img-responsive" width="50px;"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                    </li>
+                  </ul>  
+            </div>
+            </div>
+        </nav>-->
+        <nav class="navbar navbar-inverse navbar-fixed-top" style="display:none">
+            <div class="container-fluid">
+				<div class="row nav-wrapper">
+				    <div class="col-md-6 col-sm-6 col-xs-6 text-left">
+							<a href="#"><img src="img/nt-logo.png" alt="NT Logo" style="width:50px"></a>
+				    </div>
 						<div class="col-md-6 col-sm-6 col-xs-6 text-right navicon">
 							<p>MENU</p><a id="trigger-overlay" class="nav_slide_button nav-toggle" href="#"><span></span></a>
 						</div>
-					</div>
-					<div class="row hero-content">
-						<div class="col-md-12">
-							<h1 class="animated fadeInDown">Somos</h1>
-							<p class="animated fadeInDown">Una empresa de <br> TRANSFORMACIÓN DIGITAL.</p> <p class="animated fadeInDown">Fortalecemos las relaciones afectivas entre cliente-empresa, generando "valor" en los contenidos publicados. 
-							</p><!--colocar en letras mas grandes-->
-							<!--<a href="" class="use-btn animated fadeInUp">Use it for free</a>--> 
-							<a href="#about" class="learn-btn animated fadeInUp">Conéctate con los mejores <br><i class="fa fa-arrow-down"></i> </a>
-						</div>
-					</div>
 				</div>
-			</section>
-		</header>
-		<!----------------------NUESTRO EQUIPO----------------------->
-		<section class="video" id="about">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<h1><span>¿Qué hacemos?</span></h1>
-						    
-                    
-					</div>
-				</div>
-			</div>
-		</section>
-		<!----------------------CARACTERISTICAS----------------------->
-		<section class="features-intro">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-6 nopadding features-intro-img">
-						<div class="features-bg">
-							<div class="texture-overlay"></div>
-							<div class="features-img wp1">
-								<img src="img/html5-logo.png" alt="HTML5 Logo">
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 nopadding">
-						<div class="features-slider">
-								<ul class="slides" id="featuresSlider">
-									<li>
-										<h1>Diseño</h1>
-										<p>Nuestros sitios web están diseñados para responder al 100% (fácil de usar). Sabemos que no hay diseño sin estrategia ,por eso preocupamos por la identidad de su empresa.</p>
-									</li>
-									<li>
-										<h1>Productividad</h1>
-										<p>Somos una empresa impulsada por misiones, ayudamos a transformar tu empresa en forma global de una manera profunda y positiva.</p>
-									</li>
-									<li>
-										<h1>Tecnología</h1>
-										<p>Utilizamos tecnología de vanguardia, (HTMI5, PHP, etc), siempre con los últimos scripts actualizados.</p>
-									</li>
-								</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!----------------------ICONOS----------------------->
-		<section class="features-list" id="features">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-
-						<div class="col-md-4 feature-1 wp2">
-							<div class="feature-icon">
-								<i class="fa fa-line-chart"></i>
-							</div>
-							<div class="feature-content">
-								<h1>Casos de Éxito</h1>
-								<p>Nuestros clientes han mejorado sus resultados con la solución mas adecuada en función de sus necesidades.</p>
-								<a href="" class="read-more-btn">Read More <i class="fa fa-chevron-circle-right"></i></a>
-							</div>
-						</div>
-						<div class="col-md-4 feature-2 wp2 delay-05s">
-							<div class="feature-icon">
-								<i class="fa fa-thumbs-up"></i>
-							</div>
-							<div class="feature-content">
-								<h1>Clientes Satisfechos</h1>
-								<p>La recomendación de  nuestros clientes son nuestra mejor carta de presentación.</p>
-								<a href="" class="read-more-btn">Read More <i class="fa fa-chevron-circle-right"></i></a>
-							</div>
-						</div>
-						<div class="col-md-4 feature-3 wp2 delay-1s">
-							<div class="feature-icon">
-								<i class="fa fa-trophy"></i>
-							</div>
-							<div class="feature-content">
-								<h1>Respaldo de Calidad</h1>
-								<p>Aseguramos a cada uno de nuestros clientes la excelencia de nuestros servicios.</p>
-								<a href="" class="read-more-btn">Read More <i class="fa fa-chevron-circle-right"></i></a>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</section>
-		<!----------------------MUESTRA CON EL CELULAR----------------------->
-		<section class="showcase" id="screenshots">
-			<div class="showcase-wrap">
-				<div class="texture-overlay"></div>
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6">
-							<div class="device wp3">
-								<div class="device-content">
-									<div class="showcase-slider">
-										<ul class="slides" id="showcaseSlider">
-											<li>
-												<img src="img/todogaraje.png" class="img-responsive" alt="Device Content Image">
-											</li>
-											<li>
-												<img src="img/guidetog.png" alt="Device Content Image">
-											</li>
-											<li>
-												<img src="img/ccw.png" alt="Device Content Image">
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<h1>Nuestros Proyectos</h1>
-							<p>Brindamos un excelente servicio al cliente con una experiencia de clase internacional. Para asegurar a cada uno de nuestro clientes contamos con un sistema de respaldo de calidad.</p>
-							<p>Este nos da el funcionamiento para atender y satisfacer sus necesidades, manifestando asi el compromiso y responsabilidad de NTFutura</p>
-							<p>Puedes ver nuestras paginas web:</p>
-                                <ul>
-                                    <li><a href="http://todogarajeperu.com/">Todogaraje <i class="fa fa-arrow-right"></i></a></li>
-                                    <li><a href="http://www.guidetogoodbuys.com/">Guide ot good buys <i class="fa fa-arrow-right"></i></a></li>
-                                    <li><a href="http://ccworks.us/">CCWorks <i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-        <!----------------------PROJECTS----------------------->
-		<section class="screenshots-intro">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<h1>Proyectos con VIARR</h1>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!----------------------PROJECTS-IMAGES----------------------->
-		<section class="screenshots" id="screenshots">
-			<div class="container-fluid">
-				<div class="row text-center">
-				    <ul>
-				        <li>
-				            <figure>
-								<img src="img/07-screenshot.jpg" alt="Screenshot 01" class="img-responsive"> 
-								<figcaption>
-                                    <div class="caption-content">
-                                        <a href="paginas.html" class="single_image">
-                                            <i class="fa fa-search"></i><br>
-                                            <p>Lorem</p>
-                                        </a>
-                                    </div>
-								</figcaption>
-							</figure>
-				        </li>
-				        <li>
-                            <figure>
-				            <img src="img/05-screenshot.jpg" alt="Screenshot 01" class="img-responsive">
-								<figcaption>
-								<div class="caption-content">
-									<a href="paginas.html" class="single_image">
-										<i class="fa fa-search"></i><br>
-										<p>Lorem</p>
-									</a>
-								</div>
-								</figcaption>
-				            </figure> 
-				        </li>
-				        <li>
-				            <figure>
-				            <img src="img/07-screenshot.jpg" alt="Screenshot 01" class="img-responsive">
-								<figcaption>
-								<div class="caption-content">
-									<a href="paginas.html" class="single_image">
-										<i class="fa fa-search"></i><br>
-										<p>Lorem</p>
-									</a>
-								</div>
-								</figcaption>
-				            </figure>
-				        </li>
-				        <li>
-				            <figure>
-				            <img src="img/06-screenshot.jpg" alt="Screenshot 01" class="img-responsive">
-								<figcaption>
-								    <div class="caption-content">
-									    <a href="paginas.html" class="single_image">
-								            <i class="fa fa-search"></i><br>
-										    <p>Lorem</p>
-									    </a>
-								    </div>
-								</figcaption>
-				            </figure>
-				        </li>
-				    </ul>
-				</div>
-			</div>
-		</section>
-		<!-----------nosotros----------------------------->
-        <section class="team text-center section-padding" id="download" >
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="arrow">NOSOTROS</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="team-wrapper">
-                        <div id="teamSlider">
-                            <div class="col-md-12" "slides">
-                                <img src="img/Igor.jpg" class="team img" alt="Team Member">
-                                    <h2>IGOR</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+            </div>
+        </nav>
+<!----------------------SLIDE WRAPPER---------------------------->      
+    <section class="slide-wrapper">
+       <div class="video-part">
+            <video autoplay="autoplay" loop="loop" muted="muted">
+                <source  src="http://lightofweb.com/zanzo-website/video/Typing.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="container-wrapper">
+            <div class="video-part-content">
+            <div id="myCarousel" class="carousel slide">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                 </ol>
+    
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                   <!---<div class="icon-chevron">
+                                <i class="fa fa-chevron-down" style="color:#fff;" ></i>
+                            </div>--->
+                    <div class="item item1 active">
+                        <div class="fill">
+                            <div class="inner-content">
+                                <div class="carousel-img">
+                                    <img src="img/nt-logo.png" alt="sofa" class="img img-responsive" />
+                                </div>
+                                <div class="carousel-desc">
+                                    <h2>Transformación Digital</h2>    
+                                </div>
                             </div>
-                             <br>
-                             <br>
-                             <br>
-
-                            <ul class="slides">
-                                <li>
-                                    <div class="col-md-2 col-offset-md-1">
-                                        <img src="img/erick.jpg"class="team img"  alt="Team Member">
-                                            <h2>ERICK</h2>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                                    </div>
-                                    <div class="col-md-2 delay-05s">
-                                        <img src="img/Jorson.jpg" class="team img" alt="Team Member">
-                                            <h2>JORSON</h2>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                                    </div>
-                                    <div class="col-md-2 delay-1s">
-                                        <img src="img/grace.jpg" class="team img"alt="Team Member">
-                                        <h2>GRACE</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="col-md-2">
-                                        <img src="img/esthefany.png"class="team img" alt="Team Member">
-                                        <h2>ESTHEFANY</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="col-md-2" "slides">
-                                        <img src="img/05-screenshot.jpg" class="team img" alt="Team Member">
-                                        <h2>MOISES</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                                    </div>
-                                </li>
-                            </ul>
                         </div>
                     </div>
+                    <div class="item item2">
+                        <div class="fill">
+                            <div class="inner-content">
+                                <div class="carousel-img">
+                                    <img src="img/nt-logo.png" alt="white-sofa" class="img img-responsive"/>
+                                </div>
+                                <div class="carousel-desc">
+                                    <h2>Transformación Digital</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item1">
+                        <div class="fill">
+                            <div class="inner-content">
+                                <div class="carousel-img">
+                                    <img src="img/nt-logo.png" alt="white-sofa" class="img img-responsive" />
+                                </div>
+                                <div class="carousel-desc">
+                                    <h2>Transformación Digital</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
-        </section>
-		<!----------------------  CONTACT----------------------->
-		<section class="contact" id="contacto">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-12 nopadding">
-                        <div class="wrapper">
-                            <div class="title">Contacto</div>
-                            <form class="form">
-                                <input type="text" class="name field-in font" placeholder="Nombre"/>
-                                <input type="text" class="email field-in font" placeholder="Email"/>
-                                <textarea class="message field-in font" placeholder="Mensaje"></textarea> 
-                                <button class="submit font" href="#">Enviar</button>
-                            </form>  	
-                            <div class="shadow"></div>
-                        </div>
-                    </div>
-                </div> 
-            </div>  
-        </section>
-        <!---------------- FOOTER ------------------------------>
-        <footer>
-            <section class="dark-bg section-padding contact-wrap" id="contact">
-                <a href="#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6">
-                                    <ul>
-                                        <li>Encuéntranos:</li><br>
-                                        <li>Telef. (511) 716-4140</li>
-                                        <li>Av. El Derby 055 Torre 1 Piso 7 Edificio Cronos</li>
-                                        <li>Miraflores - Lima, Perú</li>
-                                    </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <ul class="social-buttons text-center">
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-            </section>
-		</footer>
-		<!----------EL MENU NO BORRAR--------------->
-		<div class="overlay overlay-boxify">
+        </div>
+    </section>
+    <!----------------------NUESTRO EQUIPO----------------------->
+	 <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore rerum, odio quos facilis et reiciendis blanditiis sequi tempore quidem, debitis quaerat pariatur eum. Quo non esse, delectus iusto iure tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quam iusto, rerum obcaecati quod minima, error et ipsam dolor, hic tenetur nemo, aperiam? Quidem deleniti fugit eveniet deserunt consectetur veniam. </p>    
+            </div>
+            <div class="col-md-6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore rerum, odio quos facilis et reiciendis blanditiis sequi tempore quidem, debitis quaerat pariatur eum. Quo non esse, delectus iusto iure tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quam iusto, rerum obcaecati quod minima, error et ipsam dolor, hic tenetur nemo, aperiam? Quidem deleniti fugit eveniet deserunt consectetur veniam. </p>    
+            </div>
+        </div>
+    </div>
+    <!----------------------CARACTERISTICAS----------------------->
+    <!----------------------NUESTRO EQUIPO----------------------->
+	 <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore rerum, odio quos facilis et reiciendis blanditiis sequi tempore quidem, debitis quaerat pariatur eum. Quo non esse, delectus iusto iure tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quam iusto, rerum obcaecati quod minima, error et ipsam dolor, hic tenetur nemo, aperiam? Quidem deleniti fugit eveniet deserunt consectetur veniam. </p>    
+            </div>
+            <div class="col-md-6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore rerum, odio quos facilis et reiciendis blanditiis sequi tempore quidem, debitis quaerat pariatur eum. Quo non esse, delectus iusto iure tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quam iusto, rerum obcaecati quod minima, error et ipsam dolor, hic tenetur nemo, aperiam? Quidem deleniti fugit eveniet deserunt consectetur veniam. </p>    
+            </div>
+        </div>
+    </div>
+    <!--------------------EL MENU OVERLAY------------------------>
+    <div class="overlay overlay-boxify">
 			<nav>
 				<ul>
-					<li><a href="#about"><i class="fa fa-heart"></i>Qué hacemos</a></li>
-					<li><a href="#features"><i class="fa fa-flash"></i>Tenemos</a></li>
+					<li><a href="#about"><i class="fa fa-heart"></i>About</a></li>
+					<li><a href="#features"><i class="fa fa-flash"></i>Features</a></li>
 				</ul>
 				<ul>
-					<li><a href="#screenshots"><i class="fa fa-desktop"></i>Nuestro Trabajo</a></li>
-					<li><a href="#download"><i class="fa fa-download"></i>Nosotros</a></li>
-				</ul>
-				<ul>
-				    <li>
-				           <a href="#contacto"><i class="fa fa-download"></i>Contacto</a> 
-				    </li>
+					<li><a href="#screenshots"><i class="fa fa-desktop"></i>Screenshots</a></li>
+					<li><a href="#download"><i class="fa fa-download"></i>Download</a></li>
 				</ul>
 			</nav>
 		</div>
+		
 <!------------------------------------LINKS AND SCRIPTS-------------------------------------------->		
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="js/min/toucheffects-min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/menu.js"></script>
 		<script src="js/flickity.pkgd.min.js"></script>
 		<script src="js/jquery.fancybox.pack.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -389,6 +191,7 @@
 		<script src="js/waypoints.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/min/scripts-min.js"></script>
+		<script src="js/slider.js"></script>
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 		<script>
 		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
