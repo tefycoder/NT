@@ -520,16 +520,15 @@ Navigation
     position: fixed;
     width: 90%;
     overflow: hidden;
-    background: 0;
     text-align: center;
     z-index: 10;
-    padding: 10px 0;
+    padding: 10px 40px;
     color: #fff;
 }
 .nav-toggle {
     position: absolute;
     top: 0;
-    right: 15px;
+    /*right: 15px;*/
     z-index: 999999;
     padding: 10px 35px 16px 0px;
     cursor: pointer;
@@ -577,21 +576,15 @@ Navigation
 }
 .navicon {
     position: relative;
-    height: 26px;
 }
 .navicon p {
-    margin: 1px 50px 0 0
+    margin: 1px 30px 0 0;
 }
-.navicon-fixed {
+/*.navicon-fixed {
     position: fixed;
-    top: 59px;
+    top: 60px;
     right: 143px;
-}
-
-.navbar-default{
-    margin: 0;!important;
-    border: none; 
-}
+}*/
 .caption-g{
     background-color: rgba(66,197,181,0.3);
     border-radius:10px;
@@ -1122,7 +1115,7 @@ Nav Overlay
 }
 
 /* Menu style*/ 
-.overlay nav {
+.overlay .menu-nav {
     position: relative;
     top: 50%;
     height: 60%;
@@ -1184,30 +1177,30 @@ Nav Overlay
     -webkit-transition: opacity 0.5s;
     transition: opacity 0.5s;
 }
-.overlay-boxify nav ul li {
+.overlay-boxify .menu-nav ul li {
     opacity: 0;
     -webkit-transform: translate3d(0, -80px, 0);
     transform: translate3d(0, -80px, 0);
     -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
     transition: transform 0.5s, opacity 0.5s;
 }
-.overlay-boxify.open nav ul:first-child li:first-child {
+.overlay-boxify.open .menu-nav ul:first-child li:first-child {
     -webkit-transition-delay: 0.05s;
     transition-delay: 0.05s;
 }
-.overlay-boxify.open nav ul:first-child li:nth-child(2) {
+.overlay-boxify.open .menu-nav ul:first-child li:nth-child(2) {
     -webkit-transition-delay: 0.1s;
     transition-delay: 0.1s;
 }
-.overlay-boxify.open nav ul:nth-child(2) li:first-child {
+.overlay-boxify.open .menu-nav ul:nth-child(2) li:first-child {
     -webkit-transition-delay: 0.15s;
     transition-delay: 0.15s;
 }
-.overlay-boxify.open nav ul:nth-child(2) li:nth-child(2) {
+.overlay-boxify.open .menu-nav ul:nth-child(2) li:nth-child(2) {
     -webkit-transition-delay: 0.2s;
     transition-delay: 0.2s;
 }
-.overlay-boxify.open nav ul li {
+.overlay-boxify.open .menu-nav ul li {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);

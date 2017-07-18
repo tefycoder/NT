@@ -35,14 +35,15 @@ $(document).ready(function(){
       );
 });
 $(window).scroll(function(event) {
-    if ($(window).scrollTop()>=190) {
+    if ($(window).scrollTop()>=200) {
         event.preventDefault();
         //$('body').addClass('flowers-leaves');
-        $('nav').fadeIn(1200);
+        $('nav').fadeIn(1000);
+        $('nav').css('background','rgba(245, 55, 0,0.95)').css('border','none');
     } 
     else if ($(window).scrollTop()== 0) {
         //$('body').removeClass('flowers-leaves');
-        $('nav').fadeOut(100);
+        $('nav').fadeOut(50);
         //$('nav').hide();
         //$('.skill span').removeClass("expand ps");
     } 
