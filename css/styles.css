@@ -3,9 +3,9 @@
 /* ==========================================================================
 HTML5 display definitions
 ========================================================================== */
-*{
+/*{
     outline: 1px solid rgba(0,255,0,0.3);
-}
+}*/
 /*
 * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
 */
@@ -17,7 +17,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 /*
 * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
 */
-audio, canvas, video {
+audio, canvas {
     display: inline-block;
     *display: inline;
     *zoom: 1;
@@ -516,10 +516,19 @@ Buttons
 /* ==========================================================================
 Navigation
 ========================================================================== */
+.nav-wrapper{
+    position: fixed;
+    width: 90%;
+    overflow: hidden;
+    text-align: center;
+    z-index: 10;
+    padding: 10px 40px;
+    color: #fff;
+}
 .nav-toggle {
     position: absolute;
     top: 0;
-    right: 15px;
+    /*right: 15px;*/
     z-index: 999999;
     padding: 10px 35px 16px 0px;
     cursor: pointer;
@@ -534,14 +543,15 @@ Navigation
     width: 35px;
     height: 5px;
     border-radius: 1px;
-    background: #fff;
+   background: #fff;
     cursor: pointer;
+    
 }
 .nav-toggle span:before {
-    top: -10px
+    top: -10px;
 }
 .nav-toggle span:after {
-    bottom: -10px
+    bottom: -10px;   
 }
 .nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
     -webkit-transition: all 300ms ease-in-out;
@@ -566,17 +576,28 @@ Navigation
 }
 .navicon {
     position: relative;
-    height: 26px;
 }
 .navicon p {
-    margin: 1px 50px 0 0
+    margin: 1px 30px 0 0;
 }
-.navicon-fixed {
+/*.navicon-fixed {
     position: fixed;
-    top: 59px;
+    top: 60px;
     right: 143px;
+}*/
+.caption-g{
+    background-color: rgba(66,197,181,0.3);
+    border-radius:10px;
+}
+.caption-g h2{
+    margin: 0;
+    text-shadow: 1px 1px #ccc;
 }
 
+.navbar-fixed-top {
+  position: fixed;
+  z-index: 10;
+}
 /* ==========================================================================
 Hero
 ========================================================================== */
@@ -934,7 +955,8 @@ Screenshots Intro
 Screenshots
 ========================================================================== */
 .screenshots{
-    background: rgba(256,45,0,0.7);
+    background: url(../img/fondo.jpg) fixed;
+    padding-bottom: 50px;
 }
 .img-project{
     padding: 20px;
@@ -1053,7 +1075,6 @@ footer ul {
 }
 footer li {
     float: left;
-    margin-right: 15%;
     list-style: none;
     /*text-transform: uppercase*/;
 }
@@ -1064,14 +1085,16 @@ footer li a {
     border-radius: 100%;
     border: 1px solid #fff;
     text-decoration: none;
+    margin: 0 8px;
 }
 footer li:last-child {
     margin-right: 0
 }
 
-/*.social-buttons{
-    margin-left: 100px;
-}*/
+.social-buttons{
+    margin:50px;
+}
+
 .social-buttons li a:hover{
     color: rgba(255,45,0,0.7); 
     background: #fff;
@@ -1080,7 +1103,7 @@ footer li:last-child {
 /* ==========================================================================
 Nav Overlay
 ========================================================================== */
-/* Overlay style */
+ /*Overlay style */
 
 .overlay {
     position: fixed;
@@ -1091,8 +1114,8 @@ Nav Overlay
     background: rgba(52, 82, 113, 0.95);
 }
 
-/* Menu style */
-.overlay nav {
+/* Menu style*/ 
+.overlay .menu-nav {
     position: relative;
     top: 50%;
     height: 60%;
@@ -1154,30 +1177,30 @@ Nav Overlay
     -webkit-transition: opacity 0.5s;
     transition: opacity 0.5s;
 }
-.overlay-boxify nav ul li {
+.overlay-boxify .menu-nav ul li {
     opacity: 0;
     -webkit-transform: translate3d(0, -80px, 0);
     transform: translate3d(0, -80px, 0);
     -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
     transition: transform 0.5s, opacity 0.5s;
 }
-.overlay-boxify.open nav ul:first-child li:first-child {
+.overlay-boxify.open .menu-nav ul:first-child li:first-child {
     -webkit-transition-delay: 0.05s;
     transition-delay: 0.05s;
 }
-.overlay-boxify.open nav ul:first-child li:nth-child(2) {
+.overlay-boxify.open .menu-nav ul:first-child li:nth-child(2) {
     -webkit-transition-delay: 0.1s;
     transition-delay: 0.1s;
 }
-.overlay-boxify.open nav ul:nth-child(2) li:first-child {
+.overlay-boxify.open .menu-nav ul:nth-child(2) li:first-child {
     -webkit-transition-delay: 0.15s;
     transition-delay: 0.15s;
 }
-.overlay-boxify.open nav ul:nth-child(2) li:nth-child(2) {
+.overlay-boxify.open .menu-nav ul:nth-child(2) li:nth-child(2) {
     -webkit-transition-delay: 0.2s;
     transition-delay: 0.2s;
 }
-.overlay-boxify.open nav ul li {
+.overlay-boxify.open .menu-nav ul li {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
@@ -1204,7 +1227,6 @@ Waypoints
 /*====================================================
 Nosotros
 ============================================*/
-
 
 .team-sec{float: left;width: 100%;}
 .team .photo {width: 250px; height: 250px; display: inline-block; overflow: hidden; position: relative; }
@@ -1272,6 +1294,23 @@ Nosotros
 .card-image {
 width: 100%;
 height: 100%;
+}
+.title-us{
+    background: rgb(49, 112, 143);
+    padding: 50px 0 30px;
+    color: #fff;
+    
+}
+.team{
+    background: rgb(49, 112, 143);
+    color: #fff;
+}
+.team img {
+    width: 19vw;
+    height: 19vw;
+    margin: 2.5vw;
+    border-radius: 100%;
+
 }
 
 ==*/
@@ -1459,7 +1498,7 @@ input:invalid{
 }
 /* ==========================================================================
 paginas
-========================================================================== */
+=======================================================================*/
 
 
 
@@ -1481,5 +1520,64 @@ paginas
 
 
 
+<<<<<<< HEAD
 
 
+=======
+@-webkit-keyframes bounce{
+  0%{
+    
+  }
+  50%{
+    -webkit-transform: translate(0, 8px);
+  }
+}
+@-moz-keyframes bounce{
+  0%{
+    
+  }
+  50%{
+    -moz-transform: translate(0, 8px);
+  }
+}
+@keyframes bounce{
+  0%{
+    
+  }
+  50%{
+    transform: translate(0, 8px);
+  }
+}
+@-webkit-keyframes shadow{
+  0%{
+    
+  }
+  50%{
+    opacity: 0.8;
+    width: 50%;
+  }
+}
+@-moz-keyframes shadow{
+  0%{
+    
+  }
+  50%{
+    opacity: 0.8;
+    width: 50%;
+  }
+}
+@keyframes shadow{
+  0%{
+    
+  }
+  50%{
+    opacity: 0.8;
+    width: 50%;
+  }
+}
+/*******************************************************/
+.icon-chevron{
+    position: absolute;
+    bottom: 0;
+}
+>>>>>>> d7500d385aaf42b078ab914aaed7038e55926dcb
