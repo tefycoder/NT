@@ -1204,199 +1204,282 @@ Waypoints
 /*====================================================
 Nosotros
 ============================================*/
-.team img {
-    width: 19vw;
-    height: 19vw;
-    margin: 2.5vw;
-    border-radius: 100%;
+
+
+.team-sec{float: left;width: 100%;}
+.team .photo {width: 250px; height: 250px; display: inline-block; overflow: hidden; position: relative; }
+.photo-shadow {position: absolute; z-index: -1; top: 12px; left: 16px; bottom: -10px; border: 1px solid #E3E3E3; height: 250px; width: 246px; background: #fff; }
+.col-item{position: relative;}
+.team{margin-top: 18px;
+    padding: 26px;}
+.team .photo img{width: 100%;    vertical-align: middle;position: relative;}
+.social-connect{margin-top: 13px;}
+.info{margin-top: 22px;}
+.info .name{font-size: 18px;font-weight: 600;margin-bottom: 2px;}
+.info .degination{font-size: 16px;font-weight: 300;font-style: italic;color: #8B8B8B;}
+.social-connect a{ display: inline-block; border: 1px solid #E3E3E3; font-size: 14px; color: #919191; width: 24px; height: 24px; text-align: center; line-height: 24px;margin-right: 4px;}
+.social-connect a .fa{margin: 0;}
+.social-connect a:hover{color: #fff;} .carousel-line{height: 320px; position: absolute; bottom: 361px; width: 110%; left: -5.5%;}
+.carousel-line > .controls{position: absolute; bottom: -16px; left: 50%; margin-left: -50px; background: #fff; padding: 0px 20px; color: #000;}
+.carousel-line > .controls > a{    color: #868686; font-size: 24px; font-weight: 300;}
+
+.carousel-inner.onebyone-carosel { margin: auto; width: 90%; }
+.onebyone-carosel .active.left { left: -33.33%; }
+.onebyone-carosel .active.right { left: 33.33%; }
+.onebyone-carosel .next { left: 33.33%; }
+.onebyone-carosel .prev { left: -33.33%; }
+
+.info-card {
+    float: left;
+	margin: 10px;
+	-webkit-perspective: 600px;
 }
-/*
-.socia {
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    color: rgb(255, 255, 255);
-    font-size: 17px;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 50%;
-    background: rgb(36, 40, 48);
+
+.front, .back {
+	background: #FFF;
+	border-radius: 115px;
+	transition: -webkit-transform 1s;
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	border: 1px solid black;
+}
+
+.front {
+	overflow: hidden;
+    width: 198px;
+    height: 216px;
+	position: absolute;
+	z-index: 1;
+}
+
+.back {
+    padding: 89px;
+    padding-top: 23px;
+    width: 191px;
+    height: 216px;
+	-webkit-transform: rotateY(-180deg);
+	
+}
+
+.info-card:hover .back {
+	-webkit-transform: rotateY(0);
+}
+
+.info-card:hover .front {
+	-webkit-transform: rotateY(180deg);
+}
+
+.card-image {
+width: 100%;
+height: 100%;
+}
 
 ==*/
 /* =========================================================================
 CONTACTO
 ========================================================================== */
-.contact{
-    background: url(../img/fondo.jpg);
-    background-position: bottom right;
+.contactbody{
+  font-family: 'Raleway', sans-serif;
+  color:#fff;
+  background:#105268;
+  font-size:1.2rem;
 }
-.title{
-  margin: 23px auto;
-  width: 50%;
-  text-align: center;
-  padding-bottom: 10px;
-  font-weight: 300;
-  font-size: 32px;
-  color: #2E4B62;
+
+contant1{
+  text-align:center;
 }
-.wrapper {
-  width: 50%;
-  height: 50%;
-  margin: 5% auto 0 auto; 
+*:focus {outline: none;}
+
+
+/*-------------Form-------------*/
+
+.overlay{  
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color:#105268;
+  opacity:0;
+  visibility: hidden;
+  z-index:100;
+  width: 0;
+  max-width: 300px;
+  height:0;
+  max-height:350px;
+  	background: #ecf0f1;
+  padding:20px;
+  border-radius:6px;
+  box-shadow:.3em .3em .4em #000;
 }
-.font {
-  font-size: 16px;
-  font-family: Helvetica, sans-serif;
-  color: #fff;
+.overlay.open{
+  width:100%;
+  height:100%;
+  visibility: visible;  
+  transition:opacity .4s  .2s ease-out;
+  opacity:1;
 }
-.form {
-  text-align: center; 
-  -webkit-animation: bounce 1.5s infinite;
-  -moz-animation: bounce 1.5s infinite;
-  animation: bounce 8.5s infinite;
+.close-button {
+  display: inline-block;
+  float:right;
+  width: 2em;
+  height: 2em;
+  border: 0.1em solid tomato;
+  font-size: .8em;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.5s;
+  transform: translateZ(0);  
+  transform: rotate(225deg);
 }
-.shadow{
-  box-shadow: 0px 0px 20px 5px #AAA;
-  opacity: 0.5;
-  border-radius: 100px;
-  width: 45%; 
-  margin: 40px auto 0 auto;
-  padding: 0 10px;  
-  -webkit-animation: shadow 1.5s infinite;
-}
-.field-in {
+.close-button:before {
+  content: "";
   display: block;
-  margin: 10px auto;
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  width: 180%;
-  margin-left: -37%;
-  -webkit-transition: all 0.5s ease 0s;
-  -moz-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
+  position: absolute;
+  background-color: tomato;
+  width: 80%;
+  height: 6%;
+  left: 10%;
+  top: 47%;
 }
-.name {
-  background-color:/*rgba(245, 55,0,0.7)*/ #fff;  
+.close-button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: tomato;
+  width: 6%;
+  height: 80%;
+  left: 47%;
+  top: 10%;
+}
+.close-button:hover{
+  cursor:pointer;
+  background-color:tomato;
+}
+.close-button:hover:before, .close-button:hover:after{
+  background-color:#fff;  
+}
+ /*-------------King Joffrey dies at his wedding-------------*/
+input,textarea{
+  border:2px solid #2c3e50;
+  font-size:0.8em;
+  background-color: #ecf0f1;
+  color:#2c3e50;
+  margin-bottom:8px;
+  width:100%;
+  max-width:100%;
+}
+input{
+  width:65%;
+}
+input:focus,input:active,textarea:focus,textarea:active{
+  background-color: #2c3e50;
+  color:#ecf0f1;
+}
+input:invalid{
+  border-color:#b31800;
+}
+.btn-send{
+  color:tomato;
+  background:#ecf0f1;
+  border: 3px solid tomato;
+  transition:all 0.3s;
+  position:relative;
+  float:right;
+}
+.btn-send:hover, .btn-send:active {
   color: #fff;
-  border: 1px solid rgba(245, 55,0,0.7);
-  border-bottom: 2px solid #31708f;    
-    
+  background: tomato;
 }
-.name:hover{
-  background-color: rgba(49, 112, 143,0.3);
-  border-bottom: 3px solid rgba(245, 55,0,0.7);
-    
-}
-.name:focus, .email:focus, .message:focus{
-  outline: none;
-  padding:15px;
-  color: #fff;
-}
-.email {
-  background-color: /*rgba(245, 55,0,0.7)*/ #fff;  
-    border: 1px solid rgba(245, 55,0,0.7);
-    border-bottom: 2px solid #31708f;
-    
-}
-.email:hover{
-   background-color: rgba(49, 112, 143,0.3);
-  border-bottom: 3px solid rgba(245, 55,0,0.7);
-}
-.message {   
-  background-color: /*rgba(245, 55,0,0.7)*/;
-   border: 1px solid rgba(245, 55,0,0.7);
-  border-bottom: 2px solid #31708f;
-  overflow: hidden;
-  height: 50px;
-}
-.message:hover{
-   background-color: rgba(49, 112, 143,0.3);
-  border-bottom: 3px solid rgba(245, 55,0,0.7);
-  height: 150px;
-}
-.submit{
-  border-radius:5px;
-  padding:10px;
-  background-color: rgba(245, 55,0,0.7);  
-  border: none;
-  border-bottom: 5px solid #31708f;  
-  -webkit-transition: all 0.5s ease 0s;
-  -moz-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
-}
-.submit:hover{
-  -webkit-transform: translate(0, 4px);
-  border-bottom: 2px solid rgba(245, 55,0,0.7;  
-  box-shadow: inset 0px 0px 10px 10px rgba(245, 55,0,0.7;
+/*-------------Trigger Button-------------*/
+
+.circle {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;  
+  height: 200px;
+  width: 200px;
+  background: #FF7054;
+  border: 4px solid #FF7054;
+  border-radius: 50%;
   cursor: pointer;
+  display: block;
+  transition:border-radius .3s cubic-bezier(.3,-0.26,.4,1.3), height .3s cubic-bezier(.3,-0.26,.4,1.3),width .3s cubic-bezier(.3,-0.26,.4,1.3);
 }
-::-webkit-input-placeholder {
-   color: white;
+.circle:hover {
+  background: #D93D21;
+  border-color:#D93D21;
 }
+.circle.open{
+  border-radius:0;
+  height:100%;
+  width:100%;
+}
+.circle.open:hover{
+  background-color:#FF7054;
+  border-color:#FF7054;
+}
+.envelope {
+  height: 0;
+  width: 0;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom: 40px solid white;
+  border-left: 60px solid white;
+  border-right: 60px solid white;
+  border-top: 40px solid transparent;
+  margin: auto;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  position: absolute;
+}
+.envelope-top {
+  height: 0;
+  width: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-top: 40px solid white;
+  margin:auto;
+  top:0;
+  left:0;
+  right:0;
+  bottom:55px;
+  position: absolute;
+}
+.circle:hover .envelope-top{
+  transform:rotateX(180deg);
+  top:-75px;
+  transition:top 0.4s ease-in-out, transform 0.4s ease-in-out;  
+}
+/* ==========================================================================
+paginas
+========================================================================== */
 
-:-moz-placeholder { 
-   color: white;
-}
 
-::-moz-placeholder { 
-   color: white; 
-}
 
-:-ms-input-placeholder {  
-   color: white;  
-}
 
-@-webkit-keyframes bounce{
-  0%{
-    
-  }
-  50%{
-    -webkit-transform: translate(0, 8px);
-  }
-}
-@-moz-keyframes bounce{
-  0%{
-    
-  }
-  50%{
-    -moz-transform: translate(0, 8px);
-  }
-}
-@keyframes bounce{
-  0%{
-    
-  }
-  50%{
-    transform: translate(0, 8px);
-  }
-}
-@-webkit-keyframes shadow{
-  0%{
-    
-  }
-  50%{
-    opacity: 0.8;
-    width: 50%;
-  }
-}
-@-moz-keyframes shadow{
-  0%{
-    
-  }
-  50%{
-    opacity: 0.8;
-    width: 50%;
-  }
-}
-@keyframes shadow{
-  0%{
-    
-  }
-  50%{
-    opacity: 0.8;
-    width: 50%;
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
